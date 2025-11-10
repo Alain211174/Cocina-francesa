@@ -1,0 +1,146 @@
+/* Estilos específicos para la página de login */
+
+.contenedor-sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    min-height: calc(100vh - 80px); /* Restar altura del nav */
+    background-color: var(--color-fondo);
+    padding: var(--espaciado-grande);
+}
+
+.tarjeta-sesion {
+    background-color: var(--color-blanco);
+    padding: var(--espaciado-grande);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo-sesion {
+    width: 80px;
+    height: auto;
+    margin-bottom: var(--espaciado-medio);
+}
+
+.tarjeta-sesion h1 {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamaño-titulo);
+    color: var(--color-primario);
+    margin-bottom: var(--espaciado-grande);
+}
+
+.formulario-sesion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-medio);
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo-formulario label {
+    margin-bottom: var(--espaciado-pequeño);
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.campo-formulario input,  .campo-formulario textarea{
+    padding: var(--espaciado-medio);
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font-family: var(--fuente-texto);
+    font-size: var(--tamaño-texto);
+    transition: border-color 0.3s;
+}
+
+.campo-formulario input:focus,  .campo-formulario textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+}
+
+.boton-login-form {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: var(--espaciado-medio);
+    border-radius: 4px;
+    font-family: var(--fuente-texto);
+    font-size: var(--tamaño-texto);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: var(--espaciado-pequeño);
+}
+
+.boton-login-form:hover {
+    background-color: var(--color-secundario);
+}
+
+.enlace-registro {
+    margin-top: var(--espaciado-medio);
+    color: var(--color-texto);
+}
+
+.enlace-registro a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+.enlace-registro a:hover {
+    text-decoration: underline;
+}
+
+.mensaje-error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: var(--espaciado-medio);
+    border-radius: 4px;
+    border-left: 4px solid #c62828;
+    margin-bottom: var(--espaciado-medio);
+    text-align: left;
+}
+
+.usuarios-prueba {
+    margin-top: var(--espaciado-grande);
+    padding-top: var(--espaciado-medio);
+    border-top: 1px solid var(--color-borde);
+}
+
+.usuarios-prueba p {
+    margin-bottom: var(--espaciado-pequeño);
+    font-size: var(--tamaño-texto-pequeño);
+    color: var(--color-texto);
+}
+
+.boton-usuario-prueba {
+    background-color: transparent;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    padding: var(--espaciado-pequeño) var(--espaciado-medio);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--tamaño-texto-pequeño);
+    transition: all 0.3s;
+}
+
+.boton-usuario-prueba:hover {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-sesion {
+        padding: var(--espaciado-medio);
+    }
+    
+    .tarjeta-sesion {
+        padding: var(--espaciado-medio);
+    }
+}

@@ -1,0 +1,246 @@
+/* Definir las variables de colores */
+:root {
+    --color-acento: #E74C3C;
+    --color-texto-secundario: #7F8C8D;
+
+    --color-primario: #a99e47;
+    --color-secundario: #834e1f;
+    --color-fondo: #0d0c38;
+    --color-texto: #1d1e54;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #F5F5F5;
+    --color-borde: #D2B48C;
+    --color-comentario-fondo: #F9F5F0;
+    --color-enlace: #0d0c38;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2 {
+    color: var(--color-principal);
+    font-family: 'Georgia', serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Sección de Información del Restaurante */
+#informacion-restaurante {
+    padding: 40px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#informacion-restaurante h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#informacion-restaurante p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+    margin-bottom: 20px;
+}
+
+/* Sección de Ubicación */
+#ubicacion-restaurante {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ubicacion-restaurante h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mapa-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Sobre Mí */
+#sobre-mi {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mi .informacion {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#sobre-mi .informacion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#sobre-mi .informacion p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Imagen a la derecha */
+#sobre-mi .imagen {
+    flex: 1;
+    text-align: center;
+}
+
+#sobre-mi .imagen img {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Sección de Ubicación */
+#ubicacion-restaurante {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ubicacion-restaurante h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.informacion-ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen-ubicacion {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-ubicacion img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-ubicacion {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.texto-ubicacion p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.8;
+}
+
+
+/* Contenedor principal de los platillos */
+.contenedor-platillos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilo para cada tarjeta de platillo */
+.tarjeta-platillo {
+    width: 280px;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.tarjeta-platillo:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para la imagen del platillo */
+.imagen-platillo {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-platillo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Cuando pasas el mouse sobre la imagen, la imagen se mueve un poco */
+.tarjeta-platillo:hover .imagen-platillo img {
+    transform: scale(1.05);
+}
+
+/* Contenido del platillo (nombre) */
+.contenido-platillo {
+    padding: 1rem;
+    text-align: center;
+}
+
+.titulo-platillo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilo de la descripción corta (opcional) */
+.descripcion-platillo {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Botón para ver detalles */
+.boton-ver-detalles {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.boton-ver-detalles:hover {
+    background-color: #e64a19;
+}

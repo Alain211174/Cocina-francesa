@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Digitalerias</title>
+    <script src="https://kit.fontawesome.com/fc95ca9248.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+
+    <!-- Nav Superior -->
+    <nav class="navegacion-superior">
+        <div class="contenedor-navegacion">
+            <div class="logo-navegacion">
+                <a href="index.php">
+                    <img src="media/Logo.png" alt="Logo Gastronomía Francesa">
+                </a>
+            </div>
+            
+            <div class="menu-navegacion">
+                <a href="index.php" class="link">Inicio</a>
+                <a href="nosotros.php" class="link">Nosotros</a>
+                <a href="contacto.php" class="link">Contacto</a>
+                <?php if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']): ?>
+                    <span class="usuario-sesion">Hola, <?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
+                    <a href="cerrar_sesion.php" class="boton-login">
+                        <i class="fa-solid fa-sign-out" style="color: #ffffff;"></i> Cerrar Sesión
+                    </a>
+                <?php else: ?>
+                    <a href="login.php" class="boton-login">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i> Iniciar Sesión
+                    </a>
+                <?php endif; ?>
+            </div>
+            
+            <div class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Formulario -->
+     <div class="contenedor-sesion">
+        <div class="tarjeta-sesion">
+        <h2>¿Quejas o sugerencias?</h2>
+
+        <form action="enviar_correo.php" method="post" class="formulario-sesion">
+
+            <div class="campo-formulario">
+                <label for="email">Nombre:</label>
+                <input type="text" placeholder="Nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" placeholder="Correo" required>
+                <label for="email">Telefono:</label>
+                <input type="tel" placeholder="Teléfono" required>
+                <label for="email">Comentario:</label>
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+            </div>
+
+            
+
+            <button type="submit" class="boton-login-form">Enviar</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
