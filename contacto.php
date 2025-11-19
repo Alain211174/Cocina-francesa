@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+Layer','GTM-NQV9C3MZ');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Digitalerias</title>
+    <link rel="icon" href="media/francia.png" type="image/x-icon">
+    <title>Contacto</title>
     <script src="https://kit.fontawesome.com/fc95ca9248.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7RB5J8FXP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7RB5J8FXP');
+</script>
+
 <body>
-    
+
 
     <!-- Nav Superior -->
     <nav class="navegacion-superior">

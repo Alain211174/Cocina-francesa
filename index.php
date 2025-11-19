@@ -25,14 +25,29 @@ try {
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/francia.png" type="image/x-icon">
     <title>Gastronomía Francesa</title>
     <script src="https://kit.fontawesome.com/fc95ca9248.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7RB5J8FXP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7RB5J8FXP');
+</script>
+
 <body>
+
+
     <!-- Nav Superior -->
     <nav class="navegacion-superior">
         <div class="contenedor-navegacion">
@@ -200,7 +215,10 @@ try {
             </div>
         </aside>
         <div id="qr">
-            <img src="media/qr.png" > 
+            <p><br>Mapa del sitio</br></p>
+            <a href="index.php" class="link">Inicio</a>
+            <a href="nosotros.php" class="link">Nosotros</a>
+            <a href="contacto.php" class="link">Contacto</a>
         </div>
         <aside id="foot_der">
         <ul>

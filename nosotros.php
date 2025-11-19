@@ -28,14 +28,25 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Digitalerias</title>
+    <link rel="icon" href="media/francia.png" type="image/x-icon">
+    <title>Sobre nosotros</title>
     <script src="https://kit.fontawesome.com/fc95ca9248.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7RB5J8FXP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7RB5J8FXP');
+</script>
+
 <body>
-    
 
     <!-- Nav Superior -->
     <nav class="navegacion-superior">
@@ -132,15 +143,42 @@ try {
     <section id="sobre-mi" class="contenido-principal">
         <div class="informacion">
             <h2>Sobre mí</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt venenatis orci, sed sollicitudin ipsum sollicitudin nec. Nulla facilisi. Vivamus vel dolor et nisl congue euismod.</p>
-            <p>Etiam et venenatis purus. Suspendisse at urna libero. Integer pharetra orci at magna fringilla, a condimentum odio convallis.</p>
+            <p>Mi nombre es Alain, soy un estudiante de la carrera de Diseño Digital de Medios Interactivos</p>
+            <p>Mi objetivo con este proyecto es demostrar mis habilidades en el area de diseño web</p>
         </div>
         <div class="imagen">
             <img src="media/Ficha.png">
         </div>
     </section>
 
-
+    <footer>
+        <aside id="foot_izq">
+            <div id="redes">
+                <h3>Siguenos en:</h3>
+                <ul id="sociales">
+                    <li><a href="https://wwww.facebook"><img src="media/fac.png" width="25px" height="25px"></a></li>
+                    <li><a href="https://wwww.twitter"><img src="media/twi.png" width="25px" height="25px"></a></li>
+                    <li><a href="https://wwww.youtube"><img src="media/you.png" width="25px" height="25px" alt=""></a></li>
+                    <li><a href="https://wwww.linkedin"><img src="media/lin.png" width="25px" height="25px" alt=""></a></li>
+                    <li><a href="https://wwww.instagram"><img src="media/ins.png" width="25px" height="25px" alt=""></a></li>
+                </ul>
+            </div>
+        </aside>
+        <div id="qr">
+            <p><br>Mapa del sitio</br></p>
+            <a href="index.php" class="link">Inicio</a>
+            <a href="nosotros.php" class="link">Nosotros</a>
+            <a href="contacto.php" class="link">Contacto</a>
+        </div>
+        <aside id="foot_der">
+        <ul>
+            <strong><h3>Contactanos</h3></strong>
+            <li>Contacto: <br> Edgar Alain Acosta / alainacosta64@gmail.com</li>
+            <li>Repositorio: <br>https://github.com/AlainAcosta03</li><br>
+            <li>UACJ - IADA</li>
+        </ul>
+        </aside>
+    </footer>
 
 
 </body>

@@ -8,15 +8,15 @@
     --color-borde: #D2B48C;
     --color-comentario-fondo: #F9F5F0;
     --color-enlace: #0d0c38;
-    
+
     --fuente-titulos: 'Italianno', cursive;
     --fuente-texto: 'Caudex', serif;
-    
+
     --tamaño-titulo: 2.5rem;
     --tamaño-subtitulo: 1.8rem;
     --tamaño-texto: 1rem;
     --tamaño-texto-pequeño: 0.875rem;
-    
+
     --espaciado-pequeño: 0.5rem;
     --espaciado-medio: 1rem;
     --espaciado-grande: 2rem;
@@ -203,13 +203,13 @@ body {
     background-color: var(--color-blanco);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .tarjeta-platillo:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .imagen-platillo {
@@ -269,7 +269,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -283,7 +283,7 @@ body {
     border-radius: 8px;
     overflow-y: auto;
     position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .boton-cerrar-modal {
@@ -353,7 +353,8 @@ body {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* Relación 16:9 */
+    padding-bottom: 56.25%;
+    /* Relación 16:9 */
 }
 
 
@@ -362,8 +363,10 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    max-width: 500px;  /* Limita el tamaño máximo de la imagen */
-    margin: 0 auto;  /* Centra la imagen */
+    max-width: 500px;
+    /* Limita el tamaño máximo de la imagen */
+    margin: 0 auto;
+    /* Centra la imagen */
 }
 
 /* Mensaje cuando no hay imagen */
@@ -577,7 +580,7 @@ body.menu-abierto {
         padding: 80px var(--espaciado-medio) var(--espaciado-medio);
         transition: right 0.3s ease;
         z-index: 999;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
     .menu-navegacion.activo {
@@ -586,7 +589,7 @@ body.menu-abierto {
 
     .menu-navegacion a {
         padding: var(--espaciado-medio) 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
         text-align: center;
     }
@@ -601,7 +604,7 @@ body.menu-abierto {
         color: var(--color-blanco);
         font-weight: bold;
         padding: var(--espaciado-medio) 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
         text-align: center;
     }
@@ -614,7 +617,7 @@ body.menu-abierto {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -670,7 +673,7 @@ body.menu-abierto {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     width: 50px;
@@ -683,7 +686,7 @@ body.menu-abierto {
 }
 
 .carrusel-btn:hover {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .carrusel-prev {
@@ -709,7 +712,7 @@ body.menu-abierto {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -719,10 +722,10 @@ body.menu-abierto {
 }
 
 .indicador:hover {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
-footer{
+footer {
     background: var(--color-secundario);
     color: #fff;
     width: 100%;
@@ -731,27 +734,31 @@ footer{
     grid-template-columns: 50% 10% 40%;
 }
 
-footer a{
+footer a {
     background: none;
 }
 
-#qr{
+#qr {
     height: 100%;
     grid-column: 2;
-    align-items: center;
-    text-align: center;
-    align-content: center;
+    display: grid;
+    place-items: center;
 }
 
-#qr>img{
-    width: 80%;
+#qr a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-#foot_izq{
+#qr a:hover{
+    color: var(--color-texto);
+}
+
+#foot_izq {
     grid-column: 1;
 }
 
-#foot_der{
+#foot_der {
     margin: 0;
     width: 100%;
     grid-column: 3;
@@ -761,29 +768,29 @@ footer a{
     font-size: 12px;
 }
 
-#redes{
+#redes {
     padding: 5px;
-    
+
 }
 
-#redes h3{
+#redes h3 {
     margin-bottom: 10px;
     text-align: center;
     color: #ffffff;
 }
 
-#sociales{
+#sociales {
     width: 80%;
-    text-align: center; 
+    text-align: center;
 }
 
-footer li{
+footer li {
     display: inline-block;
     list-style: none;
     text-decoration: none;
 }
 
-footer ul{
+footer ul {
     margin: auto;
     list-style: none;
     text-decoration: none;
@@ -815,24 +822,24 @@ footer ul{
 }
 
 @media (max-width: 768px) {
-    
+
     .menu-hamburguesa {
         display: flex;
     }
-    
+
     .cuerpo-modal {
         flex-direction: column;
     }
-    
+
     .grid-platillos {
         grid-template-columns: 1fr;
     }
-    
+
     .info-usuario {
         flex-direction: column;
         gap: var(--espaciado-pequeño);
     }
-    
+
     .contenedor-lista-comentarios {
         max-height: 200px;
     }
@@ -842,7 +849,7 @@ footer ul{
     .cuerpo-modal {
         flex-direction: row;
     }
-    
+
     .contenedor-lista-comentarios {
         max-height: 250px;
     }
@@ -855,7 +862,7 @@ footer ul{
 }
 
 @media (max-width: 900px) {
-        .menu-navegacion {
+    .menu-navegacion {
         position: fixed;
         top: 70px;
         right: -100%;
@@ -869,23 +876,23 @@ footer ul{
         transition: all 0.3s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
-    
+
     .menu-navegacion.activo {
         right: 0;
     }
-    
+
     .menu-hamburguesa {
         display: flex;
     }
-    
+
     .menu-hamburguesa.activo span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .menu-hamburguesa.activo span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-hamburguesa.activo span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
