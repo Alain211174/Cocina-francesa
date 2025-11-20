@@ -91,7 +91,8 @@ try {
             <h1>Bienvenidos a La Rose d'Or</h1>
             <p>Un rincón del sabor francés en el corazón de México. Disfruta de nuestra cocina tradicional francesa, combinada con los sabores locales.</p>
             <p>El Restaurante La Rose d'Or nació de una pasión por la auténtica cocina francesa y el deseo de compartirla en México. Fundado en 2015 por un chef parisino y su socio mexicano, el restaurante se concibió como un puente entre dos culturas culinarias ricas y variadas. Después de años de formación en la tradición gastronómica francesa y de explorar los sabores mexicanos, decidieron abrir este pequeño rincón en el corazón de la Ciudad de México, con la misión de ofrecer una experiencia gastronómica única que celebrara la sofisticación de la cocina francesa fusionada con la frescura y la calidez de los ingredientes locales. Hoy, La Rose d'Or es un espacio donde la tradición y la innovación se encuentran, haciendo de cada plato una obra de arte.</p>
-        </div>
+        <a href="https://studio.d-id.com/agents/share?id=v2_agt_WOoEOYMz&utm_source=copy&key=WjI5dloyeGxMVzloZFhSb01ud3hNVEV5TmpVM016VXhOamd5TnpVeU9ETTFNakk2WDJ4elFrcFZSblp6UVhFMWJWUkZSMEZmTUVkcg==">¿Quieres saber más?</a>
+            </div>
         <div class="contenedor-platillos">
             <h2>Platillos Destacados</h2>
             
@@ -142,9 +143,9 @@ try {
     <!-- Sección 3: Sobre mí -->
     <section id="sobre-mi" class="contenido-principal">
         <div class="informacion">
-            <h2>Sobre mí</h2>
-            <p>Mi nombre es Alain, soy un estudiante de la carrera de Diseño Digital de Medios Interactivos</p>
-            <p>Mi objetivo con este proyecto es demostrar mis habilidades en el area de diseño web</p>
+            <h2>Sobre el creador</h2>
+            <p>Alain Acosta es un estudiante de la carrera de Diseño Digital de Medios Interactivos</p>
+            <p>Su mayor fuerte siempre ha sido el modelado 3D y la animación, pero lentamente ha desarrollado habilidades en el area del diseño web, tanto en frontend como backend</p>
         </div>
         <div class="imagen">
             <img src="media/Ficha.png">
